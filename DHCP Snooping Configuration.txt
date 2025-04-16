@@ -1,0 +1,17 @@
+DHCP Snooping Configuration
+
+!!! Switch
+
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+Switch(config)#ip dhcp sn
+Switch(config)#ip dhcp snooping 
+Switch(config)#ip dhcp snooping vlan 1
+Switch(config)#no ip dhcp snooping information option
+Switch(config)#in f0/1
+Switch(config-if)#ip dhcp snooping tr
+Switch(config-if)#ip dhcp snooping trust 
+Switch(config-if)#
+Switch(config-if)#
